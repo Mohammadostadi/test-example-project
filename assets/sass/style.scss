@@ -1,14 +1,9 @@
 // import base styles
-@import 'base/variable';
-@import 'base/font';
-@import 'base/global';
-
+@import "base/variable";
+@import "base/font";
+@import "base/global";
 
 //import component styles
 
-
-
 //import pages styles
-@import 'pages/login';
-
-
+@import "pages/login";
