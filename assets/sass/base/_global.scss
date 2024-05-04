@@ -133,11 +133,23 @@ table {
   object-fit: cover !important;
 }
 
+.img-thumbnail{
+  max-width: 200px;
+  display: block;
+  margin: 10px auto;
+}
+.img {
+  max-width: 260px;
+  display: block;
+  margin: 10px auto;
+}
+
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
   color: #80b3ff;
+  text-decoration: none;
 }
 a:hover,
 a:focus {

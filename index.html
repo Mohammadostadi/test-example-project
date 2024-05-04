@@ -4,28 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>web site</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/vendors/bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/style/style.min.css">
-  <script defer src="assets/js/products.js"></script>
+  
 </head>
 <body>
   <section class="main-menu-sec">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex justify-content-around">
       <div class="logo">
         <h1><span>Logo</span>.com</h1>
       </div>
       <div class="menu-div">
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+        <ul class="d-flex" id="menu-container">
+          <li class="px-2 active-menu-link"><a href="index.html">Home</a></li>
+          <li class="px-2 non-active-menu-link"><a href="products.html">Products</a></li>
+          <li class="px-2 non-active-menu-link"><a href="">Categories</a></li>
+          <li class="px-2 non-active-menu-link"><a href="">Contact Us</a></li>
+          <li class="px-2 non-active-menu-link"><a href="">About Us</a></li>
         </ul>
       </div>
-      <div class="icons-in-menu">
-        
+      <div class="icons-in-menu d-flex">
+        <div class="px-2">
+          <a href="">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span> search</span>
+          </a>
+        </div>
+        <div class="px-2">
+          <a href="login.html">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="px-2">
+          <a href="">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>

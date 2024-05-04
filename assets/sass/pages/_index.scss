@@ -1,0 +1,31 @@
+.main-menu-sec {
+  box-shadow: $box--shadow;
+  padding: 1rem 0;
+  margin: .5rem;
+  border-radius: 15px;
+  a{
+    color: $clr--dark;
+  }
+  li{
+    margin: 0 .5rem;
+    padding:  .3rem .75rem;
+    border-radius: 15px;
+  }
+  .non-active-menu-link:hover{
+    transition: all .3s ease;
+    background-color: $clr--primary;
+    a{
+      color: $clr--white;
+    }
+  }
+  .active-menu-link{
+    background-color: $clr--secondary;
+    a{
+      color: $clr--forth;
+    }
+  }
+}
+.logo{
+  font-size: 1.5rem;
+  font-family: Poppins-Bold;
+}
