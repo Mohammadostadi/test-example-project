@@ -18,7 +18,7 @@ const productsContainer = document.querySelector('#productsContainer');
                     </div>
                     <p>Brand: ${el.brand}</p>
                     <div class="w-100 text-center my-3">
-                        <a href="#">read more</a>
+                        <a href="product.html" id="${el.id}">read more</a>
                     </div>
                 </div>
             </div>

@@ -38,3 +38,20 @@
     font-family: Poppins-Bold;
   }
 }
+
+.slideshow-container{
+  height: 86vh;
+  
+  /* Fading animation */
+  .fade {
+    transition: all 0.3s ease;
+    animation: fade 3s ease;
+    }
+}
+
+
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
