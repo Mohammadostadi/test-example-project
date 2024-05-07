@@ -1,3 +1,6 @@
+.product-sec{
+    transition: all .3s ease;
+}
 .product-div{
     border-radius: 15px;
     box-shadow: $box--shadow;
@@ -19,9 +22,36 @@
         transition: all .3s ease;
     }
 }
+
 .category-container{
+    border-radius: 15px;
+    height: 86vh;
+    // position: fixed;
+    overflow-y: scroll;
     box-shadow: $box--shadow;
+    transition: all .3s ease;
     margin: .5rem 0;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    &::-webkit-scrollbar-track {
+        box-shadow: $box--shadow; 
+        border-radius: 15px;
+    }
+    
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $clr--third; 
+        border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: $clr--secondary; 
+    }
     ul li{
         margin: .5rem;
         border-radius: 15px;

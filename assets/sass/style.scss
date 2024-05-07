@@ -4,8 +4,10 @@
 @import "base/global";
 
 //import component styles
-
+@import "components/moblie-menu";
+@import "components/spinner";
+@import "components/prouduct-container";
 //import pages styles
 @import "pages/index";
 @import "pages/login";
-@import "pages/product";
+@import "pages/categories";
