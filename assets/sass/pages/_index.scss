@@ -1,3 +1,11 @@
+.icons-in-menu{
+  a{
+    font-size: x-large;
+  }
+  a:hover{
+    background-color: $clr--gray;
+  }
+}  
 .main-menu-sec {
   box-shadow: $box--shadow;
   padding: .75rem 0;

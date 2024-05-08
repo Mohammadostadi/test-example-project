@@ -4,10 +4,14 @@
 @import "base/global";
 
 //import component styles
-@import "components/moblie-menu";
+@import "components/mobile-menu";
 @import "components/spinner";
-@import "components/prouduct-container";
+@import "components/product-container";
+@import "components/search";
+@import "components/user";
 //import pages styles
 @import "pages/index";
 @import "pages/login";
 @import "pages/categories";
+@import "pages/product";
+@import "pages/error";

@@ -1,7 +1,11 @@
+// import {fetch} from 'fetchAPI.js'
+
+
 const listCategory = []
 const menuContainer = document.querySelector('#categoryContainer');
 const productsContainer = document.querySelector('#productsContainer');
 const spinner = document.querySelector('#spinner')
+
 
 
 fetch('https://dummyjson.com/products/categories')
