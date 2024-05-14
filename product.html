@@ -1,116 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/vendors/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/style/style.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/style/style.min.css" />
     <script defer src="assets/js/mobileMenu.js"></script>
     <script type="module" defer src="assets/js/product.js"></script>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="cloud">
-          <path d="M31.714,25.543c3.335-2.17,4.27-6.612,2.084-9.922c-1.247-1.884-3.31-3.077-5.575-3.223h-0.021
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="cloud">
+        <path
+          d="M31.714,25.543c3.335-2.17,4.27-6.612,2.084-9.922c-1.247-1.884-3.31-3.077-5.575-3.223h-0.021
         C27.148,6.68,21.624,2.89,15.862,3.931c-3.308,0.597-6.134,2.715-7.618,5.708c-4.763,0.2-8.46,4.194-8.257,8.919
-        c0.202,4.726,4.227,8.392,8.991,8.192h4.873h13.934C27.784,26.751,30.252,26.54,31.714,25.543z" />
-        </symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="lens">
-          <path d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
+        c0.202,4.726,4.227,8.392,8.991,8.192h4.873h13.934C27.784,26.751,30.252,26.54,31.714,25.543z"
+        />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="lens">
+        <path
+          d="M15.656,13.692l-3.257-3.229c2.087-3.079,1.261-7.252-1.845-9.321c-3.106-2.068-7.315-1.25-9.402,1.83
         s-1.261,7.252,1.845,9.32c1.123,0.748,2.446,1.146,3.799,1.142c1.273-0.016,2.515-0.39,3.583-1.076l3.257,3.229
         c0.531,0.541,1.404,0.553,1.95,0.025c0.009-0.008,0.018-0.017,0.026-0.025C16.112,15.059,16.131,14.242,15.656,13.692z M2.845,6.631
         c0.023-2.188,1.832-3.942,4.039-3.918c2.206,0.024,3.976,1.816,3.951,4.004c-0.023,2.171-1.805,3.918-3.995,3.918
-        C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z" />
-        </symbol>
-      </svg>
-</head>
-<body>
+        C4.622,10.623,2.833,8.831,2.845,6.631L2.845,6.631z"
+        />
+      </symbol>
+    </svg>
+  </head>
+  <body>
     <section class="main-menu-sec">
-        <div class="container-fluid d-flex justify-content-around">
-          <div class="logo">
-            <div class="rounded-circle pop-up-mobile-display px-2">
-              <a class="nav-link"  onclick="showPopUp('pop-up')">
-                  <svg data-v-5e2e69e4="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" tag="i" class="v-icon notranslate v-theme--light iconify iconify--bx" width="1em" height="1em" viewBox="0 0 24 24" style="font-size: 24px; height: 24px; width: 24px;"><path fill="currentColor" d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-              </a>
-              <div class="pop-ups" id="pop-ups">
-                  <div class="pop-up p-2"  id="user-pop-up" >
-                      <ul>
-                          <li class="p-0 mb-3">
-                              <a class="bg-color-menu-hover rounded" href="#"  onclick="closePopUp()"><svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/></svg></a>
-                            </li>
-                          <li class="non-active-menu rounded">
-                            <a href="index.html">
-                                Home
-                            </a>
-                          </li>
-                          <li class="rounded non-active-menu">
-                              <a href="products.html">
-                                  Products
-                              </a>
-                          </li>
-                          
-                          <li class="rounded non-active-menu">
-                              <a href="categories.html">
-                                  Categories
-                              </a>
-                          </li>
-                          <li class="rounded non-active-menu">
-                              <a href="">
-                                  Contact Us
-                              </a>
-                          </li>
-                          <li class="rounded non-active-menu">
-                              <a href="">
-                                  About Us
-                              </a>
-                          </li>
-                      </ul>
-                  </div>
+      <div class="container-fluid d-flex justify-content-around">
+        <div class="logo">
+          <div class="rounded-circle pop-up-mobile-display px-2">
+            <a class="nav-link" onclick="showPopUp('pop-up')">
+              <svg
+                data-v-5e2e69e4=""
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                tag="i"
+                class="v-icon notranslate v-theme--light iconify iconify--bx"
+                width="1em"
+                height="1em"
+                viewBox="0 0 24 24"
+                style="font-size: 24px; height: 24px; width: 24px"
+              >
+                <path
+                  fill="currentColor"
+                  d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"
+                ></path>
+              </svg>
+            </a>
+            <div class="pop-ups" id="pop-ups">
+              <div class="pop-up p-2" id="user-pop-up">
+                <ul>
+                  <li class="p-0 mb-3">
+                    <a
+                      class="bg-color-menu-hover rounded"
+                      href="#"
+                      onclick="closePopUp()"
+                      ><svg
+                        width="14"
+                        height="15"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                          fill="#69707D"
+                          fill-rule="evenodd"
+                        /></svg
+                    ></a>
+                  </li>
+                  <li class="non-active-menu rounded">
+                    <a href="index.html"> Home </a>
+                  </li>
+                  <li class="rounded non-active-menu">
+                    <a href="products.html"> Products </a>
+                  </li>
+
+                  <li class="rounded non-active-menu">
+                    <a href="categories.html"> Categories </a>
+                  </li>
+                  <li class="rounded non-active-menu">
+                    <a href=""> Contact Us </a>
+                  </li>
+                  <li class="rounded non-active-menu">
+                    <a href=""> About Us </a>
+                  </li>
+                </ul>
               </div>
-          </div>
-            <h1><span>Logo</span>.com</h1>
-          </div>
-          <div class="menu-div">
-            <ul class="d-flex" id="menu-container">
-              <li class="px-2 non-active-menu-link"><a href="index.html">Home</a></li>
-              <li class="px-2 non-active-menu-link"><a href="products.html">Products</a></li>
-              <li class="px-2 non-active-menu-link"><a href="categories.html">Categories</a></li>
-              <li class="px-2 non-active-menu-link"><a href="">Contact Us</a></li>
-              <li class="px-2 non-active-menu-link"><a href="">About Us</a></li>
-            </ul>
-          </div>
-          <div class="icons-in-menu d-flex">
-            <div class="search">
-                <input type="text" placeholder="search" />
-                <div class="symbol">
-                  <svg class="cloud">
-                    <use xlink:href="#cloud" />
-                  </svg>
-                  <svg class="lens">
-                    <use xlink:href="#lens" />
-                  </svg>
-                </div>
-              </div>
-            <div class="px-2">
-              <a href="login.html" class="rounded-circle p-2 d-flex justify-content-center align-items-center">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
             </div>
-            <div class="px-2">
-              <a href="" class="rounded-circle p-2 d-flex justify-content-center align-items-center">
-                <i class="fa fa-cart-plus" aria-hidden="true"></i>
-              </a>
+          </div>
+          <h1><span>Logo</span>.com</h1>
+        </div>
+        <div class="menu-div">
+          <ul class="d-flex" id="menu-container">
+            <li class="px-2"><a href="index.html">Home</a></li>
+            <li class="px-2"><a href="products.html">Products</a></li>
+            <li class="px-2"><a href="categories.html">Categories</a></li>
+            <li class="px-2"><a href="">Contact Us</a></li>
+            <li class="px-2"><a href="">About Us</a></li>
+          </ul>
+        </div>
+        <div class="icons-in-menu d-flex">
+          <div class="search">
+            <input type="text" placeholder="search" />
+            <div class="symbol">
+              <svg class="cloud">
+                <use xlink:href="#cloud" />
+              </svg>
+              <svg class="lens">
+                <use xlink:href="#lens" />
+              </svg>
             </div>
+          </div>
+          <div class="user">
+            <a
+              href="login.html"
+              class="rounded-circle p-2 d-flex justify-content-center align-items-center"
+            >
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="card-menu">
+            <a
+              href="card.html"
+              class="rounded-circle p-2 d-flex justify-content-center align-items-center"
+            >
+              <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
+      </div>
     </section>
 
-    <section class="sec-info container">
-        <div class="row" id="product-item">
-            <div class="col-12 d-flex justify-content-center align-items-center">
-                <div class="spinner" id="spinner"></div>
-            </div>
-            <!-- <div class="col-lg-6">
+    <section class="sec-info container-fluid">
+      <div class="row" id="product-item">
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <div class="spinner" id="spinner"></div>
+        </div>
+        <!-- <div class="col-lg-6">
                 <div class="my-3 text-center slide-plus" id="z-index-1">
                 <img width="650px" height="453px" class=" w-100 image-css rounded active-image mySlides" id="image-product-1" src="public/images/image-product-1.jpg" alt="">
                 <img width="650px" height="453px" class=" w-100 image-css rounded non-active-image mySlides" id="image-product-2" src="public/images/image-product-2.jpg" alt="">
@@ -175,7 +212,7 @@
                 </div>
                 </div>
             </div> -->
-        </div>
-      </section>
-</body>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,65 +1,48 @@
-.icons-in-menu{
-  a{
+.icons-in-menu {
+  a {
     font-size: x-large;
   }
-  a:hover{
+  a:hover {
     background-color: $clr--gray;
   }
-}  
-.main-menu-sec {
-  box-shadow: $box--shadow;
-  padding: .75rem 0;
-  margin: 0.5rem;
-  border-radius: 15px;
-  .menu-div{
-    margin: auto 0;
-    ul{
-      margin: 0;
-    }
-  }
-  a {
+  gap: 8px;
+}
+
+.user, .card-menu{
+  i{
     color: $clr--dark;
   }
-  li {
-    margin: 0 1rem;
-    padding: 0.3rem 0.75rem;
-    border-radius: 15px;
-  }
-  .non-active-menu-link:hover {
-    transition: all 0.3s ease;
-    background-color: $clr--primary;
-    a {
-      color: $clr--white;
-    }
-  }
-  .active-menu-link {
-    background-color: $clr--secondary;
-    a {
-      color: $clr--forth;
-    }
+}
+.main-menu-sec {
+  box-shadow: $box--shadow;
+  margin: 0.5rem;
+  .user,.card-menu{
+    color: $clr--dark;
   }
 }
 .logo {
   display: flex;
-  h1{
+  h1 {
     font-size: 1.5rem;
     font-family: Poppins-Bold;
   }
 }
 
-.slideshow-container{
+.slideshow-container {
   height: 86vh;
-  
+
   /* Fading animation */
   .fade {
     transition: all 0.3s ease;
     animation: fade 3s ease;
-    }
+  }
 }
 
-
-
 @keyframes fade {
-  from {opacity: .8} 
-  to {opacity: 1}
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
 }

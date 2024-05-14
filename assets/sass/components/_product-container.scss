@@ -1,5 +1,5 @@
-#productsContainer {
-  height: calc(100vh - 14vh);
+#productsContainer, #product-item {
+  height: calc(100vh - 10vh);
   // position: fixed;
   overflow-y: scroll;
   /* width */
@@ -24,4 +24,8 @@
   &::-webkit-scrollbar-thumb:hover {
     background: $clr--secondary;
   }
+}
+
+#spinner-container{
+  height: 60vh;
 }

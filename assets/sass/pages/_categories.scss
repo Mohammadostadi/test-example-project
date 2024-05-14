@@ -1,21 +1,35 @@
 .product-sec {
   transition: all 0.3s ease;
 }
-.product-div {
+.product-card {
   border-radius: 15px;
   box-shadow: $box--shadow;
   padding: 1.5rem;
   align-items: center;
   width: 100%;
   color: $clr--dark;
+  h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: clamp(1rem, calc(0.8rem + 1.2vw), 1.3rem);
+  }
+  p{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
   img {
     max-width: unset;
   }
   a {
     color: $clr--white;
-    background-color: $clr--secondary;
+    background-color: $clr--third;
     padding: 0.5rem 1rem;
-    border-radius: 15px;
+    border-radius: 8px;
   }
   a:hover {
     background-color: $clr--primary;
