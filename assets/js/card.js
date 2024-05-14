@@ -69,7 +69,7 @@ data.then(data =>{
     <p class="mb-2">$${data.discountedTotal}</p>
   </div>
 
-  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-info btn-block btn-lg">
+  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-color-secondary btn-block btn-lg">
     <div class="d-flex justify-content-between">
       <span>$${data.discountedTotal}</span>
       <span>Checkout <i class="fa fa-long-arrow-alt-right ms-2"></i></span>
