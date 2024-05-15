@@ -48,9 +48,10 @@
 
 .why_section .box {
   p{
-    color: $clr--forth;
+    color: $clr--secondary;
   }
-  background-color:$clr--third;
+  box-shadow: $box--shadow;
+  border: 1px solid $clr--third;
   text-align: center;
   margin-top: rem(45);
   padding: rem(25);
@@ -78,4 +79,92 @@
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+}
+
+
+.heading_container {
+  margin-bottom: 20px;
+}
+
+.shop_section .box{ 
+  box-shadow: $box--shadow;
+  border: 1px solid $clr--third;
+  position: relative;
+  padding: rem(10);
+  margin-top: rem(25);
+  border-radius: 4px;
+  a {
+    color: $clr--dark;
+  }
+  .img-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: rem(15) rem(30);
+    height: 245px;
+    img {
+      max-width: 100%;
+      max-height: 145px;
+    }
+  }
+  .detail-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .detail-box h6 span {
+    color: $clr--secondary;
+  }
+  .new {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid $clr--forth;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 15px;
+  }
+}
+
+.shop_section .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: rem(45);
+  a {
+    display: inline-block;
+    padding: rem(10) rem(40);
+    background-color: $clr--primary;
+    color: $clr--white;
+    border: 1px solid $clr--primary;
+    border-radius: 4px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    &:hover{
+      background-color: transparent;
+      color: $clr--secondary;
+    }
+  }
 }
