@@ -29,9 +29,6 @@
 }
 
 .slideshow-container {
-  height: 86vh;
-
-  /* Fading animation */
   .fade {
     transition: all 0.3s ease;
     animation: fade 3s ease;
@@ -45,4 +42,40 @@
   to {
     opacity: 1;
   }
+}
+
+
+
+.why_section .box {
+  p{
+    color: $clr--forth;
+  }
+  background-color:$clr--third;
+  text-align: center;
+  margin-top: rem(45);
+  padding: rem(25);
+  border-radius: 8px;
+  .img-box{
+    margin-bottom: rem(15);
+  }
+}
+
+.layout_padding {
+  padding-top: rem(90);
+  padding-bottom: rem(90);
+}
+.heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.heading_center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
 }

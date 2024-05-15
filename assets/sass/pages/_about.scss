@@ -1,0 +1,37 @@
+.card {
+  box-shadow: $box--shadow;
+  margin: .5rem;
+}
+
+.about-section {
+  border-radius: 4px;
+    box-shadow: $box--shadow;
+    padding: rem(50);
+    text-align: center;
+    background-color: $clr--secondary;
+    color: $clr--forth !important;
+    h1{
+        color: $clr--white;
+    }
+}
+
+.title {
+  color: $clr--forth;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: .5rem;
+  border-radius: 8px;
+  color: $clr--white;
+  background-color: $clr--primary;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  &:hover{
+    background-color: $clr--third;
+    transition: all .3s ease;
+  }
+}
