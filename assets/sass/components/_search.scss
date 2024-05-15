@@ -16,7 +16,6 @@
       position: relative;
       width: var(--height);
       height: var(--height);
-    //   font: 400 16px 'Varela Round', sans-serif;
       color: $clr--third;
       border: 0;
       box-sizing: border-box;
@@ -113,7 +112,7 @@
   }
 
 
-  @media(max-width: 445px){
+  @include mw(445){
     .search{
       input[type="text"]{
         &:focus{

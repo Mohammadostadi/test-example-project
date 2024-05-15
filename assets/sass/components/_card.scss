@@ -1,10 +1,10 @@
 .card-item{
-    background-color: $clr--primary;
+    background-color: $clr--primary !important;
 }
 .btn-color-secondary{
-    background-color: $clr--secondary;
+    background-color: $clr--secondary !important;
     &:hover{
-        background-color: $clr--third;
+        background-color: $clr--third !important;
         transition: all .3s ease;
     }
 }

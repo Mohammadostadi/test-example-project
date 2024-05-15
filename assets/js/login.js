@@ -1,4 +1,3 @@
-
 // = 'kminchelle'
 // = 'kminchelle@qq.com'
 // = '0lelplR'
@@ -15,9 +14,8 @@ login.addEventListener('click', (e) =>{
       body: JSON.stringify({
         
         username: user,
-        // email: email,
         password: password,
-        expiresInMins: 30, // optional, defaults to 60
+        expiresInMins: 30,
       })
     })
     .then(response => {
@@ -28,7 +26,7 @@ login.addEventListener('click', (e) =>{
 		return response.json();})
     .then(data =>{
 		console.log(data);
-		if(data.username == user /*&& data.password == password*/){
+		if(data.username == user){
 			window.location.href = "index.html";
 		}
 	});
@@ -36,16 +34,3 @@ login.addEventListener('click', (e) =>{
 });
 
 
-
-
-/** 
- * javascript comment 
- * @Author: x
- * @Date: 2024-05-08 10:22:36 
- * @input:fjgdfkghdfg
- * @output:jfxhgldfhdg
- * @Desc:  
- */
-// function test (arg1 , arg){
-// 	console.log("sfhdsflhsdf")
-// }

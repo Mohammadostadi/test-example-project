@@ -1,4 +1,5 @@
 .pop-ups {
+  z-index: 999;
   display: none;
   position: fixed;
   left: 0;
@@ -13,31 +14,43 @@
   border-radius: 0.3rem;
   box-shadow: 0.2rem 0.2rem 1.5rem 0.001rem;
   transition: all 1.5s;
-  min-width: 170px;
+  min-width: 300px;
   box-shadow: $box--shadow;
+  ul li{
+    margin: .25rem;
+  }
 }
 .pop-up-mobile-display {
   display: none;
 }
 
 .active-menu {
-  background-color: $clr--primary;
+  padding: .5rem;
+  background-color: $clr--primary !important;
   a {
     color: $clr--white !important;
   }
 }
-.non-active-menu:hover {
-  a {
-    color: $clr--primary !important;
+.non-active-menu{
+  padding: .5rem;
+  a{
+    color: $clr--dark;
   }
-  background-color: $clr--third;
+  &:hover {
+    a {
+      color: $clr--primary !important;
+    }
+    background-color: $clr--third;
+  }
 }
 
 .show {
   display: flex !important;
+  transition: all 1s ease;
 }
 
-@media (max-width: 1030px) {
+
+@include mw(1030){
   .menu-div {
     display: none;
   }

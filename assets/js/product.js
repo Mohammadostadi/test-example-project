@@ -21,7 +21,7 @@ data.then(data =>{
     </div>
 </div>
 <div class="col-lg-6 box-info">
-    <div class="info-sneakers-company my-4">
+    <div class="info-company my-4">
     <span class="color-primary font-bold">
         ${data.title}
     </span>

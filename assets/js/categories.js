@@ -1,15 +1,12 @@
-// import {fetch} from 'fetchAPI.js'
+import { fetchFunction } from "./fetchAPI.js";
 
 const listCategory = [];
 const menuContainer = document.querySelector("#categoryContainer");
 const productsContainer = document.querySelector("#productsContainer");
 const spinner = document.querySelector("#spinner");
-
-fetch("https://dummyjson.com/products/categories")
-  .then((res) => res.json())
-  .then((data) => {
-    // console.log(data);
-    const arrayCategories = [];
+const data = fetchFunction('products/categories')
+data.then(data =>{
+  const arrayCategories = [];
     menuContainer.innerHTML = "";
     data.forEach((el) => {
       const html = `<li class="non-active-products" id="${el}"><a href="#">${
@@ -34,14 +31,13 @@ fetch("https://dummyjson.com/products/categories")
         });
       });
     });
-  });
+})
+
 
 const showProducts = function (product) {
-  fetch(`https://dummyjson.com/products/category/${product}`)
-    .then((res) => res.json())
-    .then((data) => {
-      // productsContainer.addEventListener('load', () => spinner.classList.remove('spinner'))
-      productsContainer.innerHTML = "";
+  const data = fetchFunction(`products/category/${product}`)
+  data.then(data =>{
+    productsContainer.innerHTML = "";
       data.products.forEach((el) => {
         const html = `<div class="col-lg-4 col-md-6">
             <div class="product-card">
@@ -62,5 +58,5 @@ const showProducts = function (product) {
         </div>`;
         productsContainer.insertAdjacentHTML("afterbegin", html);
       });
-    });
+  })
 };

@@ -91,7 +91,8 @@
   }
 }
 
-@media (max-width: 400px) {
+
+@include mw(400){
   .category-container {
     a {
       padding: 0 !important;

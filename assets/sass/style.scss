@@ -1,4 +1,5 @@
 // import base styles
+@import "base/mixings";
 @import "base/variable";
 @import "base/font";
 @import "base/global";
@@ -10,7 +11,8 @@
 @import "components/spinner";
 @import "components/product-container";
 @import "components/search";
-@import "components/user";
+@import "components/color";
+@import "components/footer";
 //import pages styles
 @import "pages/index";
 @import "pages/login";

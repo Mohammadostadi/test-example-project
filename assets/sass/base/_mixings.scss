@@ -1,0 +1,15 @@
+@mixin mw($size){
+    @media screen and (max-width: #{$size}px){
+        @content;
+    }
+};
+
+@mixin miw($size){
+    @media screen and (min-width: #{$size}px){
+        @content;
+    }
+};
+
+@function rem($pixel){
+    @return #{$pixel / 16}rem;
+}

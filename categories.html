@@ -14,8 +14,7 @@
     />
     <link rel="stylesheet" href="assets/style/style.min.css" />
     <script defer src="assets/js/mobileMenu.js"></script>
-    <script defer src="assets/js/categories.js"></script>
-    <!-- <script defer src="assets/js/fetchAPI.js"></script> -->
+    <script defer type="module" src="assets/js/categories.js"></script>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="cloud">
         <path
@@ -80,23 +79,23 @@
                         /></svg
                     ></a>
                   </li>
-                  <li>
+                  <li class="rounded non-active-menu">
                     <a href="index.html"> Home </a>
                   </li>
-                  <li>
+                  <li class="rounded non-active-menu">
                     <a href="products.html"> Products </a>
                   </li>
 
-                  <li class="active">
+                  <li class="active-menu rounded">
                     <a href="categories.html"> Categories </a>
                   </li>
-                  <li>
+                  <li class="rounded non-active-menu">
                     <a href=""> Contact Us </a>
                   </li>
-                  <li>
+                  <li class="rounded non-active-menu">
                     <a href=""> About Us </a>
                   </li>
-                  <li>
+                  <li class="rounded non-active-menu">
                     <a href="error.html"> Error </a>
                   </li>
                 </ul>
@@ -139,7 +138,7 @@
           </div>
           <div class="card-menu">
             <a
-              href=""
+              href="card.html"
               class="rounded-circle p-2 d-flex justify-content-center align-items-center"
             >
               <i class="fa fa-cart-plus" aria-hidden="true"></i>
@@ -156,7 +155,6 @@
             <div class="d-flex justify-content-center align-items-center my-3">
               <div class="spinner" id="spinner"></div>
             </div>
-            <!-- <li class="active-products"><a href="#">active</a></li> -->
           </ul>
         </nav>
         <div class="col-lg-10 col-md-9 col-7">
