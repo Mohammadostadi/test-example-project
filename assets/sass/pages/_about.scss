@@ -35,3 +35,112 @@
     transition: all .3s ease;
   }
 }
+
+.team-item {
+  padding: 35px;
+  padding-right: 0;
+  position: relative;
+  z-index: 0;
+  &::after, &::before{
+    content: "";
+    position: absolute;
+    -webkit-box-shadow: $box--shadow;
+    box-shadow: $box--shadow;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  &::before{
+    height: 100%;
+    background-color: $clr--white;
+    left: 0;
+    top: 0;
+    right: 30px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  &::after{
+    height: 6px;
+    width: calc(100% - 30px);
+    background-color: $clr--primary;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  &:hover::after{
+    height: 100%;
+  }
+  .img-holder {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-shadow: $box--shadow;
+    box-shadow: $box--shadow;
+    border-radius: 10px;
+    width: calc(100% - 70px);
+    margin-left: rem(70);
+    overflow: hidden;
+    img {
+      border-radius: 10px;
+      width: 100%;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      -webkit-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+    }
+  }
+  &:hover .img-holder img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  .socials {
+    position: absolute;
+    a {
+      display: block;
+      margin-right: 0;
+      margin-bottom: rem(15);
+      -webkit-box-shadow: $box--shadow;
+      box-shadow: $box--shadow;
+    }
+  }
+  .socials a:last-of-type {
+    margin-bottom: 0;
+  }
+  .team-content {
+    margin-right: rem(70);
+    text-align: center;
+  }
+  .team-content h5 {
+    color: $clr--secondary;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .team-content p {
+    color: $clr--third;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+}
+.team-item:hover .team-content h5, .team-item:hover .team-content p {
+  color: $clr--white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.socials a {
+    width: 35px;
+    height: 35px;
+    background-color: $clr--secondary;
+    border-radius: 50%;
+    -webkit-box-shadow: $box--shadow;
+    box-shadow: $box--shadow;
+    text-align: center;
+    color: $clr--white;
+    padding-top: rem(10);
+    font-size: 16px;
+    margin-right: rem(10);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
