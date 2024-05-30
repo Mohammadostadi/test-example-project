@@ -18,7 +18,7 @@ data.then((data) => {
                           <span>Price: ${el.price}$</span>
                           <span>Rating: ${el.rating}</span>
                       </div>
-                      <p>Brand: ${el.brand}</p>
+                      <p>Brand: ${el.category}</p>
                       <p>Description: ${el.description}</p>
                       <a class="w-100 d-block text-center my-2" href="" id="product${el.id}">read more</a>
                   </div>
