@@ -3,6 +3,7 @@ const loc = localStorage.getItem('product')
 const productContainer = document.querySelector('#product-item')
 const data = fetchFunction(`products/${loc}`)
 data.then(data =>{
+    console.log(data);
     productContainer.innerHTML = '';
     const html = `<div class="col-lg-6">
     <div class="my-3 text-center slide-plus" id="z-index-1">
@@ -26,7 +27,7 @@ data.then(data =>{
         ${data.title}
     </span>
     <h1 class="font-bold">
-        ${data.brand}
+        ${data.category}
     </h1>
     <p class="color-dark-grayish-blue">
         ${data.description}
